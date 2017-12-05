@@ -64,32 +64,22 @@ $> git mv fileName__ fileName
 $> git commit -m 'fixing the casing?'
 ```
 
-## How to run this exercise?
-
-You will need to install the dependencies first:
-
-If you use `npm`:
+## How to run this code?
 
 ```sh
-$> npm instal
-```
-
-I wanted to use `yarn` which is a *better* `npm`
-
-```sh
-$> yarn
-```
-
-With the dependencies out of the way. Let's compile the code:
-
-```sh
-$> ./node_module/.bin/tsc
-```
-
-Finally, run the code! You could run it in iOS or Android...
-Or Both!
-
-```sh
-$> react-native run-ios
-$> react-native run-android
+# Cloning the repo to 'todos'
+git clone git@github.com:rodrigoelp/reactnative-typescript-exercise-7.git counterredux
+# Changing directory
+cd counterredux
+# Installing dependencies
+yarn # if you have not installed yarn, then change it to: npm install
+# Compiling the typescript code
+./node_modules/.bin/tsc
+# Launching the react-native development server
+open -a Terminal "`react-native start`"
+# Compiling the code for ios and deploying it to the simulator
+react-native run-ios # optionally, type: react-native run-android
+# Alternatively, you could comment the line above and run the two lines below.
+# open -a Terminal "`react-native run-ios`"
+# open -a Terminal "`react-native run-android`"
 ```
